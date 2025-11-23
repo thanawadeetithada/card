@@ -1,5 +1,5 @@
 <?php
-$start_date = "2025-05-23 12:00:00";
+$start_date = "2024-11-19 12:00:00";
 ?>
 
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ $start_date = "2025-05-23 12:00:00";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Card</title>
+    <title>Valentine Card</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
 
@@ -138,7 +138,7 @@ $start_date = "2025-05-23 12:00:00";
                 <div class="label">วินาที</div>
             </div>
         </div>
-        <form action="page6.php" method="get">
+        <form action="card6.php" method="get">
             <button class="btn">ดูความทรงจำของเรา ➜</button>
         </form>
     </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Valentine Card</title>
+    <title>Card</title>
 
     <style>
     body {
@@ -88,6 +88,24 @@
     noButton.addEventListener("click", function() {
         growStepClick(yesButton);
     });
+
+    document.addEventListener('touchmove', function(event) {
+        if (event.scale !== 1) {
+            event.preventDefault();
+        }
+    }, {
+        passive: false
+    });
+
+    // ปิด double-tap zoom
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+        const now = new Date().getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
     </script>
 
 

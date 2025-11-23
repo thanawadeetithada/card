@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Card</title>
+    <title>Valentine Card</title>
     <style>
     body {
         font-family: 'Prompt', sans-serif;
@@ -31,17 +31,10 @@
 
     .hidden-message {
         color: #ff3399;
+        font-size: 20px;
         text-align: center;
         padding: 20px;
         z-index: 1;
-    }
-    .label-head {
-        font-weight: bold;
-        font-size: 18px;
-    }
-
-    .label1 {
-        font-size: 10px;
     }
 
     canvas {
@@ -77,8 +70,7 @@
 <body>
     <div class="card">
         <div class="hidden-message">
-            <div class="label-head">Happy 6 Monthsary, PriteKo❤️</div> <br>
-            <div class="label">From your PriteKo Family who always supports you. </div>
+            💌 ความลับคือ...<br>รักเธอที่สุดเลย ❤️
         </div>
         <canvas id="scratch"></canvas>
     </div>

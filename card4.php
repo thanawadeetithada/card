@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
+    <title>Valentine Card</title>
 
     <style>
     body {
@@ -54,8 +54,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 3;
-        width: 20%;
-        height: 20%;
+        width: 25%;
+        height: 25%;
         background: white;
         border-radius: 50%;
         display: flex;
@@ -113,7 +113,7 @@
 <body>
 
     <div class="cd-wrapper">
-        <div class="cd" id="cd" style="background-image: url('img/coversong.jpg');"></div>
+        <div class="cd" id="cd" style="background-image: url('img/cover.jpg');"></div>
 
         <div class="play-btn" id="playBtn">
             <img src="img/play.png">
@@ -128,7 +128,7 @@
         cd.classList.add("rotate");
         playBtn.classList.add("play-active");
         setTimeout(() => {
-            window.location.href = "page5.php";
+            window.location.href = "card5.php";
         }, 800);
     });
     </script>

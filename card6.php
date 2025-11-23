@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Card</title>
+  <title>Valentine Card</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap');
 
@@ -45,7 +45,7 @@
     .piece {
       width: 100%;
       height: 100%;
-      background-image: url("mem/1.png");
+      background-image: url("mem/smile.jpg");
       background-size: 300px 420px;
       cursor: grab;
       border-radius: 3px;
@@ -87,8 +87,6 @@
 
     .card img {
       width: 100%;
-      aspect-ratio: 3 / 4;
-      object-fit: cover;
       border-radius: 15px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -128,8 +126,8 @@
     }
 
     @media (max-width: 480px) {
-      /* #puzzle-container { width: 260px; height: 360px; } */
-      /* .piece { background-size: 260px 360px; } */
+      #puzzle-container { width: 260px; height: 360px; }
+      .piece { background-size: 260px 360px; }
       .card { max-width: 280px; }
       button { font-size: 14px; padding: 10px 20px; }
     }
@@ -142,7 +140,7 @@
   <div id="puzzle-container"></div>
 
   <div id="complete-card" class="card">
-    <img src="mem/1.png" alt="ความทรงจำ">
+    <img src="mem/smile.jpg" alt="ความทรงจำ">
     <button onclick="goNext()">อ่านความในใจ →</button>
   </div>
 
@@ -216,6 +214,7 @@
               firstSelected = piece;
               piece.classList.add("selected");
             } else if (piece === firstSelected) {
+        
               piece.classList.remove("selected");
               firstSelected = null;
             } else {
@@ -257,7 +256,7 @@
     function goNext() {
       document.body.style.opacity = "0";
       setTimeout(() => {
-        window.location.href = "page8.php";
+        window.location.href = "card8.php";
       }, 800);
     }
   </script>

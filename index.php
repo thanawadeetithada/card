@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Valentine Card</title>
+    <title>Card</title>
     <style>
     body {
         display: flex;
@@ -45,7 +45,7 @@
     .envelope {
         position: relative;
         width: 300px;
-        height: 200px;
+        height: 265px;
         background-color: #f58ba0;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     }
@@ -66,7 +66,7 @@
         position: absolute;
         background-color: #ffffff;
         width: 270px;
-        height: 170px;
+        height: 220px;
         top: 5px;
         left: 15px;
         border-radius: 20px;
@@ -81,11 +81,11 @@
 
     .front {
         position: absolute;
-        border-right: 180px solid #ffc9d5;
-        border-top: 95px solid transparent;
-        border-bottom: 100px solid transparent;
-        left: 120px;
-        top: 5px;
+        border-right: 170px solid #ffc9d5;
+        border-top: 115px solid transparent;
+        border-bottom: 155px solid transparent;
+        left: 130px;
+        top: 0px;
         width: 0;
         height: 0;
         z-index: 10;
@@ -95,27 +95,30 @@
     .front:before {
         position: absolute;
         content: "";
-        border-left: 300px solid #ffc9d5;
-        border-top: 195px solid transparent;
-        left: -120px;
-        top: -95px;
+        border-left: 302px solid #ffc9d5;
+        border-top: 268px solid transparent;
+        left: -131px;
+        top: -116px;
         width: 0;
         height: 0;
     }
 
     .heart-btn {
         position: absolute;
-        top: 120px;
+        top: 225px;
         left: 50%;
         transform: translateX(-50%);
         padding: 6px 12px;
-        background-color: #ff6986;
+        background-color: #ad0104fc;
         color: #fff;
         border: none;
         border-radius: 10px;
         cursor: pointer;
         transition: transform 0.2s, background-color 0.2s;
         z-index: 1;
+        border: 1px solid rgb(0 0 0 / 22%);
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
 
     .heart-btn:hover {
@@ -129,8 +132,8 @@
 
     .seal-heart {
         position: absolute;
-        top: 90px;
-        left: 135px;
+        top: 115px;
+        left: 130px;
         width: 40px;
         height: 40px;
         background-image: url('img/heart1.png');
@@ -203,13 +206,15 @@
             <div class="front"></div>
             <div class="seal-heart"></div>
 
-            <div class="to-text">To:<br>คนพิเศษ</div>
+            <div class="to-text">To<br>PriteKo</div>
             <div class="card">
                 <div class="text">
-                    <span style="color: #ee5371;">Happy Valentine's Day!</span><br>
-                    <span style="font-size: 12px;"> ถึงคนพิเศษ,</span><br>
-                    <span style="font-size: 12px;"> ขอบคุณที่เข้ามาเป็นส่วนหนึ่งในชีวิต</span><br>
-                    <span style="font-size: 12px;"> ทำให้ทุกวันของฉันมีความหมายมากขึ้น</span><br>
+                    <span style="color: #ee5371;">Happy 6 Monthsary PriteKo</span><br><br>
+                    <span style="font-size: 12px;"> อยู่กันมาถึง 6 เดือนแล้วนะ
+                        ขอบคุณทั้งสองคนที่เข้ามาเป็นส่วนหนึ่งในความสุขของลูกสมุนและยูโกะทุกคน อยากจะบอกทั้งสองคนว่า
+                        อย่าลืมกินของอร่อยๆ นอนหลับให้เพียงพอ
+                        และที่สำคัญอย่าลืมเล่นเกมให้สนุกนะเหนื่อยก็พักผ่อนบ้างสุขภาพก็สำคัญ
+                        หันหลังมาเมื่อไหร่ยังจะมีลูกสมุน<br>และยูโกะคอยซัพพอร์ตเสมอนะ</span><br>
                 </div>
                 <button class="heart-btn" id="goPage2">ลองกดตรงนี้</button>
                 <div class="hearts">
@@ -228,7 +233,7 @@
     <script>
     $('.container').mouseenter(function() {
         $('.card').stop().animate({
-            top: '-90px'
+            top: '-200px'
         }, 'slow', function() {
             $('.heart-btn').addClass('show');
         });

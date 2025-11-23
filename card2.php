@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Card</title>
+    <title>Valentine Card</title>
 
     <style>
     body {
@@ -14,7 +14,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('mem/1-2.png');
+        background-image: url('img/cover1.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -137,7 +137,7 @@
 
     <script>
     let pin = "";
-    const correctPIN = "2368";
+    const correctPIN = "1474";
 
     function updateDots() {
         for (let i = 1; i <= 4; i++) {
@@ -174,7 +174,7 @@
 
     function checkPIN() {
         if (pin === correctPIN) {
-            window.location.href = "page4.php";
+            window.location.href = "card4.php";
         } else {
             shakeBox();
             setTimeout(clearPin, 300);

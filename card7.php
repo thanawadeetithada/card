@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Card</title>
+    <title>Valentine Card</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
@@ -115,40 +115,33 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="mem/1.webp" alt="">
+                <img src="mem/tra.jpg" alt="">
+                <div class="caption">วันที่เราไปเที่ยวด้วยกัน 💕</div>
             </div>
 
             <div class="swiper-slide">
-                <img src="mem/2.webp" alt="">
+                <img src="mem/pic.jpg" alt="">
+                <div class="caption">รูปที่ถ่ายด้วยกัน 🎬</div>
             </div>
 
             <div class="swiper-slide">
-                <img src="mem/3.webp" alt="">
+                <img src="mem/food.jpg" alt="">
+                <div class="caption">วันที่เรากินข้าวด้วยกัน 🍜</div>
             </div>
 
             <div class="swiper-slide">
-                <img src="mem/4.png" alt="">
+                <img src="mem/smile1.jpg" alt="">
+                <div class="caption">วันที่เรายิ้มให้กัน 😊</div>
             </div>
 
             <div class="swiper-slide">
-                <img src="mem/5.webp" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="mem/6.webp" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="mem/7.webp" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="mem/8.webp" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img src="mem/9.jpg" alt="">
+                <img src="mem/to.jpg" alt="">
+                <div class="caption">วันที่เราอยู่ด้วยกันทั้งวัน ☀️</div>
             </div>
         </div>
     </div>
 
-    <form action="page7.php" method="get">
+    <form action="card7.php" method="get">
         <button class="btn">ต่อจิ๊กซอว์ ➜</button>
     </form>
 
